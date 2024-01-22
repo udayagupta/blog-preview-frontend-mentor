@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-yellow: hsl(47, 88%, 63%);
+    --clr-grey: hsl(0, 0%, 50%);
+    --clr-black: hsl(0, 0%, 7%);
+    --clr-white: hsl(0, 0%, 100%);
+
+    --fw-normal: 600;
+    --fw-bold: 800;
+
+    --fs-100: 0.875rem;
+    --fs-200: 1rem;
+    --fs-300: 1.5rem;
+
+}
+
+body {
+    font-family: 'Figtree', sans-serif;
+    background-color: var(--clr-yellow);
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.card-image {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+}
+
+.card {
+    margin: 1rem;
+    background-color: var(--clr-white);
+    max-width: 320px;
+    padding: 1.2rem;
+    border: 1px solid var(--clr-black);
+    border-radius: 12px;
+    transition: all 1s ease;
+}
+
+.card:hover {
+    box-shadow: 10px 10px black;
+}
+
+.learning {
+    font-size: 1rem;
+    background-color: var(--clr-yellow);
+    color: var(--clr-black);
+    display: inline-block;
+    border-radius: 4px;
+    padding: 4px;
+    margin-top: 10px;
+}
+
+.date {
+    font-size: var(--fs-100);
+    margin-top: 8px;
+}
+
+.card h1 {
+    font-size: var(--fs-300);
+    transition: color 0.4s ease;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+
+.card h1:hover {
+    color: var(--clr-yellow);
+}
+
+.description {
+    color: var(--clr-grey);
+    line-height: 1.5;
+    margin-top: 12px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding-left: 4px;
+    border-radius: 4px;
+    transition: background-color 0.8s ease;
+}
+
+.author img {
+    display: block;
+    width: 30px;
+}
+
+.author span {
+    display: inline-block;
+    font-size: var(--fs-100);
+    font-weight: 800;
+    margin-top: 8px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.author span:hover {
+    text-decoration: underline;
+}
+
+.author:hover {
+    background-color: rgb(185, 185, 185);
+    cursor: pointer;
+}
+
+@media (max-width: 375px) {
+    body {
+        font-size: 0.8rem;
+    }
+}
