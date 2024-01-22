@@ -19,10 +19,7 @@ Users should be able to:
 
 - See hover and focus states for all interactive elements on the page
 
-### Links
 
-[Repository URL](https://github.com/Udaya-Gupta/blog-preview-frontend-mentor.git)
-[Live Site URL](https://udaya-gupta.github.io/blog-preview-frontend-mentor/)
 
 ## My process
 
